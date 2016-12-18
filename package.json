@@ -17,7 +17,7 @@
   }],
   "repository": {
     "type": "git",
-    "url": "git://github.com/philipabbey/bootstrap-config.git"
+    "url": "https://github.com/philipabbey/bootstrap-config"
   },
   "scripts": {
     "test": "node test/index.js"
