@@ -46,6 +46,9 @@ Optional, from the installation directory 'node_modules/bootstrap-config':
 npm test
 ```
 
+This will create test/variables.less from test/config.json to demonstrate the installation has worked.
+No checking of variables.less is provided at this time.
+
 ## Basic Usage
 
 ```
