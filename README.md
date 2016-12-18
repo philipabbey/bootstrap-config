@@ -55,6 +55,7 @@ No checking of variables.less is provided at this time.
 bootstrapConfig('./config.json', './variables.less');
 ```
 
+Usage within Gulp, testing for file updates:
 ```
 function isExists(file) {
   fs.stat(file, function(err, stat) {
@@ -134,11 +135,11 @@ MIT License, see https://github.com/philipabbey/bootstrap-config/blob/master/LIC
 
 ## Related Works
 
-1 This code is based almost entirely on work by Thomas Alexander under
-  'bootstrap-config-to-variable-master', https://github.com/tomalex0/bootstrap-config-to-variable
+1. This code is based almost entirely on work by Thomas Alexander under
+   'bootstrap-config-to-variable-master', https://github.com/tomalex0/bootstrap-config-to-variable
 
-2 NPM module **gulp-bootstrap-configurator**, https://www.npmjs.com/package/gulp-bootstrap-configurator
+2. NPM module **gulp-bootstrap-configurator**, https://www.npmjs.com/package/gulp-bootstrap-configurator
 
-3 NPM module **bootstrap**, https://www.npmjs.com/package/bootstrap
+3. NPM module **bootstrap**, https://www.npmjs.com/package/bootstrap
 
-4 Bootstrap, http://getbootstrap.com/
+4. Bootstrap, http://getbootstrap.com/
