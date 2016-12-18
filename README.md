@@ -80,6 +80,41 @@ gulp.task('bootstrapVariables', function (done) {
 
 ```
 
+## Project Less Usage
+
+```
+@import "../bootstrap/variables.less";
+
+// Fundamental Values
+@space-top: 20px;
+@space-bottom: 0px;
+@footer-height: 40px;
+@navbar-tiny-wrap: 334px;
+
+// Derived Values
+@navbar-two-row-height: (2 * @navbar-height) + @space-top; // 120px
+@navbar-one-row-height: @navbar-height + @space-top; // 70px
+
+body {
+  padding-top: @navbar-height + @space-top;
+  padding-bottom: @footer-height + @space-bottom;
+}
+
+/* Fix body spacing for "Small devices" when the menu bar wraps to 2 lines */
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+  body {
+    padding-top: @navbar-two-row-height;
+  }
+}
+
+/* Fix body spacing for Ultra Small devices when the menu bar wraps to 2 lines */
+@media (max-width: @navbar-tiny-wrap) {
+  body {
+    padding-top: @navbar-two-row-height;
+  }
+}
+```
+
 ## Options
 
 None.
@@ -94,8 +129,10 @@ npm run test
 ## Related Works
 
 1. This code is based almost entirely on work by Thomas Alexander under
-   'bootstrap-config-to-variable-master' (https://github.com/tomalex0/bootstrap-config-to-variable).
+   'bootstrap-config-to-variable-master', https://github.com/tomalex0/bootstrap-config-to-variable
 
-2. **gulp-bootstrap-configurator**, https://www.npmjs.com/package/gulp-bootstrap-configurator
+2. NPM module **gulp-bootstrap-configurator**, https://www.npmjs.com/package/gulp-bootstrap-configurator
 
-3. **bootstrap**, https://www.npmjs.com/package/bootstrap
+3. NPM module **bootstrap**, https://www.npmjs.com/package/bootstrap
+
+4. Bootstrap, http://getbootstrap.com/
