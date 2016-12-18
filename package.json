@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "devDependencies": {},
   "description": "Create a variables.less file from a Bootstrap config.json file.",
   "main": "index.js",
