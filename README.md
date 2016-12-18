@@ -40,6 +40,12 @@ but none of them produce any Less products, all skipping to the compiled CSS.
 npm install --save bootstrap-config
 ```
 
+Optional, from the installation directory 'node_modules/bootstrap-config':
+
+```
+npm test
+```
+
 ## Basic Usage
 
 ```
