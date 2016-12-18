@@ -1,0 +1,25 @@
+{
+  "name": "bootstrap-config",
+  "version": "0.1.0",
+  "devDependencies": {},
+  "description": "Create a variables.less file from a Bootstrap config.json file.",
+  "main": "index.js",
+  "keywords": [
+    "bootstrap",
+    "config",
+    "variables.less"
+  ],
+  "author": "Philip Abbey <philipabbey@users.noreply.github.com>",
+  "license": "MIT",
+  "maintainers": [{
+    "name": "Philip Abbey",
+    "email": "philipabbey@users.noreply.github.com"
+  }],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/philipabbey/bootstrap-config.git"
+  },
+  "scripts": {
+    "test": "node test/index.js"
+  }
+}
