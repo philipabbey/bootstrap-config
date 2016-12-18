@@ -98,7 +98,7 @@ gulp.task('bootstrapVariables', function (done) {
 ## Project Less Usage
 
 ```
-@import "../bootstrap/variables.less";
+@import "myProject/variables.less";
 
 // Fundamental Values
 @space-top: 20px;
