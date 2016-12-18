@@ -52,11 +52,16 @@ No checking of variables.less is provided at this time.
 ## Basic Usage
 
 ```
+var bootstrapConfig = require('bootstrap-config');
 bootstrapConfig('./config.json', './variables.less');
 ```
 
 Usage within Gulp, testing for file updates:
 ```
+var bootstrapConfig = require('bootstrap-config');
+var fs = require('fs');
+var gulp = require('gulp');
+
 function isExists(file) {
   fs.stat(file, function(err, stat) {
     if (err == null) {
